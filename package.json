@@ -1,0 +1,49 @@
+{
+  "name": "codeshare",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "start": "node src/server.js",
+    "dev:server": "concurrently \"npm run dev\" \"nodemon src/server.js\"",
+    "seed": "node seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "code",
+    "sharing",
+    "pastebin",
+    "editor",
+    "monaco"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "A simple code sharing application like Pastebin with Monaco Editor",
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "form-data": "^4.0.3",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
+    "nodemon": "^3.1.10",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-middleware": "^7.4.2"
+  }
+}
